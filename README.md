@@ -1,7 +1,6 @@
 # RuneScape-Woodcutting-Bot
 
 Automate the gruesome task of cutting trees in the famous MMORPG Runescape!
---------------------------------------------------------------------------------
 
 Technologies:
 --------------------------------------------------------------------------------
