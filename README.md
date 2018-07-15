@@ -4,6 +4,7 @@ Automate the gruesome task of cutting trees in the famous MMORPG Runescape!
 
 Technologies:
 --------------------------------------------------------------------------------
+- Python Imaging Library (PIL) is used to grab the game screen.
 - The script identifies trees in Runescape using the OpenCv library.
 - The animation of cutting trees is achieved by clicking the identified tree. 
 - Automated mouse positioning and clicks are handled using PyAutoGUI.
