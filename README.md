@@ -2,16 +2,16 @@
 
 Automate the gruesome task of cutting trees in the famous MMORPG Runescape!
 
+Description: 
+--------------------------------------------------------------------------------
+After each succesful woodcutting attempt the player recieves experience points in the skill of woodcutting along with a log item in their inventory. The script automates woodcutting unitl the player's inventory is full. In the event that the inventory is full, the script clears the inventory and repeats the woodcutting process.
+
 Technologies:
 --------------------------------------------------------------------------------
 - Python Imaging Library (PIL) is used to grab the game screen.
 - The script identifies trees in Runescape using the OpenCv library.
 - The animation of cutting trees is achieved by clicking the identified tree. 
 - Automated mouse positioning and clicks are handled using PyAutoGUI.
-
-Description: 
---------------------------------------------------------------------------------
-After each succesful woodcutting attempt the player recieves experience points in the skill of woodcutting along with a log item in their inventory. The script automates woodcutting unitl the player's inventory is full. In the event that the inventory is full, the script clears the inventory and repeats the woodcutting process.
 
 Areas to Improve:
 --------------------------------------------------------------------------------
