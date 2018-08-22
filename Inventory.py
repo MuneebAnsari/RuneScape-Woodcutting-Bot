@@ -3,16 +3,26 @@ import pyautogui
 
 
 class Inventory:
+    """ A Class representing the state of the player's inventory"""
 
     def __init__(self, image):
+        """
+        Initialize the player's inventory based on its initial state represented by <image>
+        :param image: The initial state of the player's inventory.
+        """
         self.image = image
+
+        # List of all logs currently in inventory
         self.logs = [log
                      for log in pyautogui.locateAllOnScreen('log1.png', confidence=0.9)
                      if 550 <= log[0] <= 740]
         self.num_logs = len(self.logs)
+
+        # Max capacity of inventory
         self.capacity = 28
 
     def drop_all_logs(self):
+        """Drops all logs from the player's inventory"""
         cv2.waitKey(4000)
         first_log_x, first_log_y = self.logs[0][0], self.logs[0][1]
         pyautogui.doubleClick(first_log_x, first_log_y)
@@ -29,12 +39,22 @@ class Inventory:
         self.logs = []
 
     def is_empty(self):
+        """
+        Returns True if the player's inventory is empty, otherwise returns false
+        """
         return self.num_logs == 0
 
     def is_full(self):
+        """
+        Returns True if the player's inventory is full, otherwise returns false
+        """
         return self.num_logs == self.capacity
 
     def process_inventory(self):
+        """
+        Outlines all logs present in inventory
+        @return: Image of inventory where all logs are outlined in a bounding rectangle
+        """
         if len(self.logs) > 0:
             # log_coord = (left, top, width, height)
             first_log_x, first_log_y = self.logs[0][0], self.logs[0][1]
@@ -48,5 +68,6 @@ class Inventory:
         return self.image
 
     def update(self):
+        """ Updates the state of the inventory as items are added and removed"""
         processed_inventory = self.process_inventory()
         cv2.imshow('inventory', cv2.cvtColor(processed_inventory, cv2.COLOR_BGR2RGB))

@@ -62,7 +62,6 @@ def locate_circular_contour(image, polynomial, rectangle, x, y, width, length):
     @param y: top-left y coordinate
     @param width: width of rectangle
     @param length: length of rectangle
-    @return: None
     """
     if len(polynomial) > 15:
         draw_outline(image, rectangle, x, y, width, length)
@@ -79,7 +78,6 @@ def draw_outline(image, rect, x, y, width, length):
     @param y: top-left y coordinate
     @param width: width of rectangle
     @param length: length of rectangle
-    @return None
     """
     if rect[2] < 60 and rect[3] < 60:
         cv2.rectangle(image, (x - 10, y - 30), (x + width + 15, y + length), (0, 255, 0), 2)
