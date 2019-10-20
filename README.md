@@ -4,13 +4,11 @@ Automate the gruesome task of cutting trees in the famous MMORPG Runescape!
 
 Description: 
 --------------------------------------------------------------------------------
-After each succesful woodcutting attempt the player recieves experience points in the skill of woodcutting along with a log item in their inventory. The script automates woodcutting unitl the player's inventory is full. In the event that the inventory is full, the script clears all logs from the inventory and repeats the woodcutting process.
+After each succesful woodcutting attempt the player recieves experience points in the skill of woodcutting along with a log item in their inventory. The script automates woodcutting until the player's inventory is full. In the event that the inventory is full, the script clears all logs from the inventory and repeats the woodcutting process.
 
 ![running](https://user-images.githubusercontent.com/22268574/42729875-76476b60-87b4-11e8-8e50-8e9707b9431d.PNG)
 
 ![levelup](https://user-images.githubusercontent.com/22268574/42729924-edf78ae0-87b5-11e8-8828-beafed313c61.PNG)
-
-*Note: script disabled when screenshot was taken, hence trees are not detected.*
 
 Technologies:
 --------------------------------------------------------------------------------
