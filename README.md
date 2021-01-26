@@ -19,6 +19,6 @@ Technologies:
 
 Areas to Improve:
 --------------------------------------------------------------------------------
-- Tree detection: Most trees are detected, however depending on lighting, brightness and or camera angle trees may go unidentified.
+- Tree detection: Depending on lighting, brightness and or camera angle trees may go unidentified.
 - Falsely identified trees: During certain instances, objects in the game with similar contour shapes may be falsely identified as trees.
 - Adapt to different displays: Remove hard coded values subject to personal display. 
